@@ -1,2 +1,4 @@
 #!/bin/bash
-gcc –E –o c $CFILE
+c_file="$CFILE"
+cpp_output=$(cpp "$c_file")
+echo "$cpp_output" > c
