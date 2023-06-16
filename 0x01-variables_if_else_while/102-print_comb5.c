@@ -12,7 +12,6 @@ int main(void)
 	int hun;
 	int ten;
 	int bas;
-
 for (tho = 0 ; tho < 10 ; tho++)
 {	
 	for (hun = 0 ; hun <= 10 ; hun++)
