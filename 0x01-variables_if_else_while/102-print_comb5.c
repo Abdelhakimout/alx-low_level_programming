@@ -1,26 +1,44 @@
 #include <stdio.h>
 
-int main(void) {
-    int i, j;
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Succes)
+ */
 
-    for (i = 0; i < 100; i++) {
-        for (j = i; j < 100; j++) {
-            // Print the first number
-            putchar(i / 10 + '0');
-            putchar(i % 10 + '0');
-            putchar(' ');
+int main(void)
+{
+	int tho;
+	int hun;
+	int ten;
+	int bas;
 
-            // Print the second number
-            putchar(j / 10 + '0');
-            putchar(j % 10 + '0');
+for ( tho = 0 ; tho < 10 ; tho++)
+{	
 
-            // Print the comma and space if this is not the last combination
-            if (i < 99 || j < 99) {
-                putchar(',');
-                putchar(' ');
-            }
-        }
-    }
-
-    return 0;
+	for (hun = 0 ; hun <= 10 ; hun++)
+	{
+	
+		for (ten = 0 ; ten < 10 ; ten++)
+		{
+			for ( bas = 0 ; bas < 10 ; bas++)
+			{
+				putchar('0' + tho);
+				putchar('0' + hun);
+				putchar(32);
+				putchar('0' + ten);
+				putchar('0' + bas);
+				if (!(tho == 9 && hun == 8))
+				{
+					putchar(',');
+					putchar(32);
+				}
+				bas++;
+			}
+		}
+	}
 }
+	putchar('\n');
+	return (0);
+}
+
