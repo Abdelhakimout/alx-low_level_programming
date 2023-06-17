@@ -8,29 +8,31 @@
 
 int main(void)
 {
-    int tens1, ones1;
-    int tens2, ones2;
+    int tho;
+    int hun;
+    int ten;
+    int bas;
 
-    for (tens1 = 0; tens1 <= 9; tens1++)
+    for (tho = 0; tho < 10; tho++)
     {
-        for (ones1 = 0; ones1 <= 9; ones1++)
+        for (hun = 0; hun < 10; hun++)
         {
-            for (tens2 = tens1; tens2 <= 9; tens2++)
+            for (ten = tho; ten < 10; ten++)
             {
-                for (ones2 = 0; ones2 <= 9; ones2++)
+                for (bas = 0; bas < 10; bas++)
                 {
-                    int num1 = (tens1 * 10) + ones1;
-                    int num2 = (tens2 * 10) + ones2;
+                    int num1 = (tho * 10) + hun;
+                    int num2 = (ten * 10) + bas;
 
                     if (num1 != num2)
                     {
-                        putchar((tens1 + '0'));
-                        putchar((ones1 + '0'));
+                        putchar((tho + '0'));
+                        putchar((hun + '0'));
                         putchar(' ');
-                        putchar((tens2 + '0'));
-                        putchar((ones2 + '0'));
+                        putchar((ten + '0'));
+                        putchar((bas + '0'));
 
-                        if (tens1 != 9 || ones1 != 9 || tens2 != 9 || ones2 != 9)
+                        if (tho != 9 || hun != 9 || ten != 9 || bas != 9)
                         {
                             putchar(',');
                             putchar(' ');
