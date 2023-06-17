@@ -8,15 +8,15 @@
 
 int main(void)
 {
-    int tho;
-    int hun;
-    int ten;
-    int bas;
-
-    for (tho = 0; tho < 10; tho++)
-    {
-        for (hun = 0; hun < 10; hun++)
-        {
+	int tho;
+	int hun;
+	int ten;
+	int bas;
+	
+	for (tho = 0; tho < 10; tho+=)
+	{
+		for (hun = 0; hun < 10; hun++)
+		{
             for (ten = tho; ten < 10; ten++)
             {
                 for (bas = 0; bas < 10; bas++)
